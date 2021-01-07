@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #f60;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .menu {
+    a {
+      font-size: 1.1rem;
+      font-weight: 700;
+
+      &::after {
+        content: "|";
+        padding: 0 0.5rem;
+        font-weight: 400;
+      }
+
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+}

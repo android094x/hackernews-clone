@@ -1,0 +1,32 @@
+.Story {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-bottom: 1px solid #dac4c4;
+
+  .title {
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: #363636;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    font-size: 0.7rem;
+
+    span {
+      padding: 0 0.3rem;
+      color: #585858;
+
+      &:first-child {
+        padding-left: 0%;
+      }
+    }
+  }
+}
